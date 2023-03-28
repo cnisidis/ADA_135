@@ -1,19 +1,19 @@
 # ADA_135
 Personal repository for course ADA_135 at Ionian University
 
-##Visualization and Sonification of Seismic Activity
+## Visualization and Sonification of Seismic Activity
 
 This attempt is being consisted by two deistinct parts.
 In the <b>Part I</b> (Lithosphere) we are representing earthquakes as points in space and in the <b>Part II</b> we discuss the possibility of sonifying data stream directly from Seismographs.
 
 ***
-###Part I: Lithosphere
+### Part I: Lithosphere
 
 <cite>Earthquakes as point-clouds</cite>
 
 On the first part the goal is to visualize and represent seismic events (earthquakes) in the 3d or 2d space as a pointcloud.
 
-#####Earthquake Event Keypoints:
+##### Earthquake Event Keypoints:
 
 - Location <small>(Longtitude & Lattitude)</small>
 - Magnitude <small>(Richter)</small>
@@ -22,7 +22,7 @@ On the first part the goal is to visualize and represent seismic events (earthqu
 
 In the current state of this version of the project, each Point inherits the properties of its respective event (Earthquke) plus the properties and the methods it needs to be visualized and sonified.
 
-####Ways to Interpret and Correlate the data:
+#### Ways to Interpret and Correlate the data:
 
 - Linearly with a fixed interval, each point is being added or lighten up after the other ignoring the time difference or the actual distance.
 - Linearly with a variant interval, each point is being added or lighten up after the other respecting their time difference and their physical distance.
@@ -30,11 +30,11 @@ In the current state of this version of the project, each Point inherits the pro
 - Non-Linearly by using the centroids of individual clusters. The events are being separated to clusters with Kmeans algorithm. By self-organising the points with their internal criteria it gives us the opportunity to observe them in parallel threads, simultaneously.
 
 
-#####Visualization Method
+##### Visualization Method
 
 In the current implementation, color's saturation depicts the time of the occurence, the color's hue the ratio of the magnitude over the depth (intensity), and the magnitude the size(radius) of each point respectively.
 
-#####Sonification Method
+##### Sonification Method
 
 - Time distance is translated to the interval for the MIDI triggers.
 - Depth affects the tone (frequency)
@@ -43,7 +43,7 @@ In the current implementation, color's saturation depicts the time of the occure
 
 
 ***
-###Part II
+### Part II
 
 <cite>Collect data in real-time (almost real time) from seismographs around the globe.</cite>
 
@@ -56,14 +56,14 @@ Each stream from each station (seismograph) is represented audibly as continuous
 
 This part is segmented to distinct phases.
 
-#####Phase A. Retrieve Data Sources
+##### Phase A. Retrieve Data Sources
 
 This attempt in general turns to be more complicated than Part II, since the data are not always publically available and it is quite harsh to attain them.
 On the other hand, the good part, is that most of the data we are looking for are accessible via different Networks, depending their localization and the foundation or affiliation handles them.
 
 By setting and pushing simple queries with this [builder](http://eida.gein.noa.gr/fdsnws/dataselect/1/builder) we are capable to retrieve useful data from the NOA (National Observatory of Athens) or directly acquiring data through the FDSN[^1]
 
-#####Phase B. Acquire Data
+##### Phase B. Acquire Data
 
 Initially most of the devices out there are using SEED format for data exchanging. 
 
@@ -71,13 +71,13 @@ In particular, there is a subversion of SEED[^10] called MiniSEED which comes to
 
 So far the most comon type of MiniSEED seems to be the STEIM2 compression. 
 
-#####Phase C. Rectify and Resample Acquired Data
+##### Phase C. Rectify and Resample Acquired Data
 //TODO
 
-#####Phase D. Render Data to Multichannel Audio
+##### Phase D. Render Data to Multichannel Audio
 //TODO
 
-#####Phase E. Represent Data graphically (optional)
+##### Phase E. Represent Data graphically (optional)
 //TODO
 
 
