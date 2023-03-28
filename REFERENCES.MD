@@ -1,8 +1,6 @@
 ## TOOLS
-
 <cite>Useful tools and links for the Earthquakes Visualization and Sonification Project</cite>
 ***
-
 [vvvv](https://visualprogramming.net/)
 
 ### miniSeed
@@ -24,4 +22,3 @@
 [FDSN NOA](http://eida.gein.noa.gr/fdsnws)
 
 
-### Other Links
