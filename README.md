@@ -23,7 +23,7 @@ On the first part the goal is to visualize and represent seismic events (earthqu
 - Depth <small>(km)</small>
 - DateTime <small>(UTC)</small>
 
-In the current state of this version of the project, each Point inherits the properties of the corresponding event (Earthquke) as well as the properties and methods needed to visualize and sonify it.
+In the current version of this project, each point inherits the properties of the corresponding earthquake event and also possesses the necessary properties and methods to visualize and sonify it.
 
 #### Ways to Interpret and Correlate the data:
 
@@ -35,11 +35,11 @@ In the current state of this version of the project, each Point inherits the pro
 
 ##### Visualization Method
 
-In the current application, color saturation represents the time of appearance, color hue the ratio of size to depth (intensity) and magnitude the size (radius) of each point respectively.
+In the current application, the *saturation* of color represents the time of appearance, the hue of color represents the ratio of *magnitude* to *depth* (intensity), and the *magnitude* represents the size (radius) of each point, respectively.
 
 ##### Sonification Method
 
-- Time distance is translated to the interval for the MIDI triggers.
+- Time distance is translated to the time interval for the MIDI triggers.
 - Depth affects the tone (frequency)
 - Magnitude affects the velocity
 - and Location (physical distance among the events) is being transcribed to Reverb wetness.  
