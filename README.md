@@ -13,6 +13,10 @@ In the <b>Part I</b> (Lithosphere) we are representing earthquakes as points in 
 
 On the first part the goal is to visualize and represent seismic events (earthquakes) in the 3d or 2d space as a pointcloud.
 
+
+[![Lithosphere Video on youtube](lithosphere_00.png)](https://youtu.be/JKl6PjuqT88)
+<small>Youtube Video [Lithosphere](https://youtu.be/JKl6PjuqT88)</small>
+
 ##### Earthquake Event Keypoints:
 
 - Location <small>(Longtitude & Lattitude)</small>
