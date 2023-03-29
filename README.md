@@ -3,8 +3,7 @@ Personal repository for course ADA_135 at Ionian University
 
 ## Visualization and Sonification of Seismic Activity
 
-This attempt is being consisted of two deistinct parts.
-In the <b>Part I</b> (Lithosphere) we are representing earthquakes as points in space and in the <b>Part II</b> we discuss the possibility of sonifying data stream directly from Seismographs.
+This attempt consists of two distinct parts. In **Part I** (Lithosphere), we represent earthquakes as points in space, and in **Part II**, we discuss the possibility of directly sonifying data streams from seismographs.
 
 ***
 ### Part I: Lithosphere
