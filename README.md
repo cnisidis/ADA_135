@@ -50,11 +50,11 @@ In the current application, the *saturation* of color represents the time of app
 
 <cite>Collect data in real-time (almost real time) from seismographs around the globe.</cite>
 
-On this part, our goal is, basically, to sonify data by accessing a continuous stream deriving from specific stations around the world.
+In this section, our goal is to sonify data by accessing a continuous stream derived from specific stations around the world. 
 
-The idea draws its inspiration by an audio experience where the auditor stands in the center of a room which is surrounded by speakers.
+The inspiration for this idea comes from an audio experience where the listener stands in the center of a room surrounded by speakers. 
 
-Each stream from each station (seismograph) is represented audibly as continuous sound signal coming through the spreaded speakers in the room.
+Each stream from the seismograph stations is audibly represented as a continuous sound signal emanating from the speakers placed around the room.
 
 
 This part is segmented to distinct phases.
