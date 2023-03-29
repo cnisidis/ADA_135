@@ -1,6 +1,8 @@
-## TOOLS
+## DATA FROMATS & TOOLS
 <cite>Useful tools and links for the Earthquakes Visualization and Sonification Project</cite>
 ***
+###Visualization and Sonification Software###
+
 [vvvv](https://visualprogramming.net/)
 
 ### miniSeed
@@ -8,7 +10,7 @@
 - [obspy](https://github.com/obspy/obspy) 
 
 
-### Custom Libs
+### Custom & Purpose made Libraries
 - [VL.Earth](https://github.com/cnisidis/VL.Earth) <small>(custom ported MiniSEED STEIM2 compression algorithm)</small>
 
 ### DSP
