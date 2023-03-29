@@ -3,7 +3,7 @@ Personal repository for course ADA_135 at Ionian University
 
 ## Visualization and Sonification of Seismic Activity
 
-The present attempt is being consisted of two deistinct parts.
+This attempt is being consisted of two deistinct parts.
 In the <b>Part I</b> (Lithosphere) we are representing earthquakes as points in space and in the <b>Part II</b> we discuss the possibility of sonifying data stream directly from Seismographs.
 
 ***
@@ -24,19 +24,19 @@ On the first part the goal is to visualize and represent seismic events (earthqu
 - Depth <small>(km)</small>
 - DateTime <small>(UTC)</small>
 
-In the current state of this version of the project, each Point inherits the properties of its respective event (Earthquke) plus the properties and the methods it needs to be visualized and sonified.
+In the current state of this version of the project, each Point inherits the properties of the corresponding event (Earthquke) as well as the properties and methods needed to visualize and sonify it.
 
 #### Ways to Interpret and Correlate the data:
 
 - Linearly with a fixed interval, each point is being added or lighten up after the other ignoring the time difference or the actual distance.
-- Linearly with a variant interval, each point is being added or lighten up after the other respecting their time difference and their physical distance.
-  <small><i>In particular, assuming that event A happens in t0 and event be in t1 then the interval is t0-t1. By this mean it is expected to come up with an output which has its own internal rythm.</i></small>
-- Non-Linearly by using the centroids of individual clusters. The events are being separated to clusters with Kmeans algorithm. By self-organising the points with their internal criteria it gives us the opportunity to observe them in parallel threads, simultaneously.
+- Linearly with a fixed time interval, each point is added or illuminated after the other, ignoring the time difference or the actual distance.
+  <small><i>Specifically, if we assume that event A occurs at t0 and event be at t1 then the interval is t0-t1. By this means it is expected to result in an output which has its own internal rhythm.</i></small>
+- Non-linear using the centroids of the individual clusters. Events are separated into clusters using the Kmeans algorithm. By self-organizing the points based on their internal criteria it allows us to observe them in parallel threads, simultaneously.
 
 
 ##### Visualization Method
 
-In the current implementation, color's saturation depicts the time of the occurence, the color's hue the ratio of the magnitude over the depth (intensity), and the magnitude the size(radius) of each point respectively.
+In the current application, color saturation represents the time of appearance, color hue the ratio of size to depth (intensity) and magnitude the size (radius) of each point respectively.
 
 ##### Sonification Method
 
@@ -62,8 +62,8 @@ This part is segmented to distinct phases.
 
 ##### Phase A. Retrieve Data Sources
 
-This attempt in general turns to be more complicated than Part II, since the data are not always publically available and it is quite harsh to attain them.
-On the other hand, the good part, is that most of the data we are looking for are accessible via different Networks, depending their localization and the foundation or affiliation handles them.
+This part generally proves to be more complex than Part II, since the data are not always publicly available and obtaining them is quite difficult.
+On the other hand, the good news is that most of the data we seek are accessible through different Networks, depending on their location and the institution or organization that handles them.
 
 By setting and pushing simple queries with this [builder](http://eida.gein.noa.gr/fdsnws/dataselect/1/builder) we are capable to retrieve useful data from the NOA (National Observatory of Athens) or directly acquiring data through the FDSN[^1]
 
