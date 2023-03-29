@@ -67,7 +67,7 @@ By setting and pushing simple queries with this [builder](http://eida.gein.noa.g
 
 ##### Phase B. Acquire Data
 
-Initially most of the devices out there are using SEED format for data exchanging. 
+Initially, most devices use the SEED format for exchanging data. 
 
 In particular, there is a subversion of SEED[^10] called MiniSEED, which comes in different flavors, depending on the nature of the data and the capabilities of each Station[^5]
 
