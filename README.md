@@ -72,7 +72,14 @@ In particular, there is a subversion of SEED[^10] called MiniSEED which comes to
 So far the most comon type of MiniSEED seems to be the STEIM2 compression. 
 
 ##### Phase C. Rectify and Resample Acquired Data
-//TODO
+
+Upsampling from 100Hz to 48kHz, antialising order:15
+no IFRs were applied
+
+Listen to an audible test on [soundcloud](https://soundcloud.com/cnisidis/earthquake-stream)
+
+
+
 
 ##### Phase D. Render Data to Multichannel Audio
 //TODO
