@@ -1,6 +1,16 @@
 # ADA_135 C NISIDIS AVA.ADA 2207
 Personal repository for course ADA_135 at Ionian University
 
+## Preface
+In recent years, I have been deeply concerned about the seismic activity in Greece. This concern led me to visualize data obtained from seismological recordings spanning several decades up to the present day.
+
+As a next step, I began exploring the possibility of sonifying this data with the ultimate goal of presenting it in an interactive installation.
+
+To accomplish this goal, I had to extensively study the phenomenon of earthquakes, the methods used to record them, and their geological significance.
+
+Below I will list the steps and methods I followed, the tools I used or had to make for this purpose.
+
+
 ## Visualization and Sonification of Seismic Activity
 
 This attempt consists of two distinct parts. In **Part I** (Lithosphere), we represent earthquakes as points in space, and in **Part II**, we discuss the possibility of directly sonifying data streams from seismographs.
