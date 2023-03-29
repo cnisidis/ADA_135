@@ -71,7 +71,7 @@ By setting and pushing simple queries with this [builder](http://eida.gein.noa.g
 
 Initially most of the devices out there are using SEED format for data exchanging. 
 
-In particular, there is a subversion of SEED[^10] called MiniSEED which comes to different flavors, depending on the nature of the data and the capabilities of each Station[^5]
+In particular, there is a subversion of SEED[^10] called MiniSEED, which comes in different flavors, depending on the nature of the data and the capabilities of each Station[^5]
 
 So far the most comon type of MiniSEED seems to be the STEIM2 compression. 
 
