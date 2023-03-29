@@ -61,8 +61,7 @@ This part is segmented to distinct phases.
 
 ##### Phase A. Retrieve Data Sources
 
-This part generally proves to be more complex than Part II, since the data are not always publicly available and obtaining them is quite difficult.
-On the other hand, the good news is that most of the data we seek are accessible through different Networks, depending on their location and the institution or organization that handles them.
+This section is generally more complex than Part II as the data is not always publicly available, making it difficult to obtain. However, the good news is that most of the data we need can be accessed through various networks depending on their location and the organization or institution that manages them.
 
 By setting and pushing simple queries with this [builder](http://eida.gein.noa.gr/fdsnws/dataselect/1/builder) we are capable to retrieve useful data from the NOA (National Observatory of Athens) or directly acquiring data through the FDSN[^1]
 
