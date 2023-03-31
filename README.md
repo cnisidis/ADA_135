@@ -93,8 +93,30 @@ Listen to an audible test on [soundcloud](https://soundcloud.com/cnisidis/earthq
 
 
 
-##### Phase D. Render Data to Multichannel Audio
-//TODO
+##### Phase D. Render Data to Audio
+
+There are several methods to convert a barely audible signal to an audio signal. One approach is upsampling, which can increase the range resolution by spreading out the data across the entire spectrum. Another option is to use pitch shifting with algorithms such as PSOLA or other OLA algorithms. However, I have decided to opt for a simpler, less precise method that is more artistically interesting - using the signal envelope.
+
+Process of creating the envelopes:
+- Obtain the FFT of the signal.
+- Map and clamp the FFT bins or bands.
+- Send the mapped and clamped bins as envelopes through MIDI.
+- Use these envelopes as input in VCVRack.
+
+//TODO waveform example
+
+//TODO FFT Envelopes Example
+
+Even though the signal's sampling rate is 100Hz/sec in our example, we are still able to read it and obtain its FFT. This allows us to generate new envelopes that can be used to drive oscillators.
+
+For the time being, we will create our oscillators in VCVRack, although any other digital audio workstation (DAW) or programming language such as PD, MAX/MSP, or SoundCollider can also be used.
+
+![VCVRack Oscillators](VCVRack_Oscillators.png)
+
+
+//TODO Multichannel Audio 
+
+
 
 ##### Phase E. Represent Data graphically (optional)
 //TODO
