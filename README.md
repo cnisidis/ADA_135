@@ -23,8 +23,9 @@ This attempt consists of two distinct parts. In **Part I** (Lithosphere), we rep
 On the first part the goal is to visualize and represent seismic events (earthquakes) in the 3d or 2d space as a pointcloud.
 
 
-[![Lithosphere Video on youtube](lithosphere_00.png)](https://youtu.be/JKl6PjuqT88)
-<small>Youtube Video [Lithosphere](https://youtu.be/JKl6PjuqT88)</small>
+|[![Lithosphere Video on youtube](lithosphere_00.png)](https://youtu.be/JKl6PjuqT88)|
+|:--:|
+|<small>*Youtube Video [Lithosphere](https://youtu.be/JKl6PjuqT88)*</small>|
 
 ##### Earthquake Event Keypoints:
 
@@ -111,7 +112,9 @@ Even though the signal's sampling rate is 100Hz/sec in our example, we are still
 
 For the time being, we will create our oscillators in VCVRack, although any other digital audio workstation (DAW) or programming language such as PD, MAX/MSP, or SoundCollider can also be used.
 
-![VCVRack Oscillators](VCVRack_Oscillators.png)
+| ![VCVRack Oscillators](VCVRack_Oscillators.png) |
+|:--:|
+| <small>*In the example above, I am using 12 FFT bands to generate envelopes, which will drive 12 different oscillators. Each oscillator is tuned in such a way that it maintains the average range of each band.*</small> |
 
 
 //TODO Multichannel Audio 
