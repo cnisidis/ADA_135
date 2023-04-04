@@ -33,7 +33,7 @@
 ***
 
 ## Sound Processing
-#### DPS Software
+#### DSP Software
 - [Audacity](https://www.audacityteam.org/)
 <small>Audacity was used to verify and compress the outputed wav files</small>
 #### DSP Libraries
