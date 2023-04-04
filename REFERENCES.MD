@@ -19,6 +19,9 @@
 ## MiniSEED Data Format
 <small>The Standard for the Exchange of Earthquake Data (SEED) is a data format intended primarily for the archival and exchange of seismological time series data and related metadata.</small>
 
+#### SEED Reference Guide
+- [SEED Manual](http://www.fdsn.org/pdf/SEEDManual_V2.4.pdf)
+
 #### Official MiniSEED Library
 - [libmseed](https://github.com/EarthScope/libmseed)
 
