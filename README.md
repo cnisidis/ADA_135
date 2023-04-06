@@ -74,11 +74,11 @@ This part is segmented to distinct phases.
 
 This section is generally more complex than Part II as the data is not always publicly available, making it difficult to obtain. However, the good news is that most of the data we need can be accessed through various networks depending on their location and the organization or institution that manages them.
 
-By setting and pushing simple queries with this [builder](http://eida.gein.noa.gr/fdsnws/dataselect/1/builder) we are capable to retrieve useful data from the NOA (National Observatory of Athens) or directly acquiring data through the FDSN[^1]
+By setting and pushing simple queries with this [builder](http://eida.gein.noa.gr/fdsnws/dataselect/1/builder) we are capable to retrieve useful data from the NOA (National Observatory of Athens) or directly acquiring data through the FDSN[^1] via IRIS[^20].
 
 ##### Phase B. Acquire Data
 
-Initially, most devices use the SEED format for exchanging data. 
+Initially, seismographs use the SEED format for exchanging seismic data (this is very depended on the sensors and the type of the data we request). 
 
 In particular, there is a subversion of SEED[^10] called MiniSEED, which comes in different flavors, depending on the nature of the data and the capabilities of each Station[^5]
 
@@ -134,3 +134,4 @@ For the time being, we will create our oscillators in VCVRack, although any othe
 [^1]: [International Federation of Digital Seismograph Networks](http://www.fdsn.org/)
 [^5]: Station: Every potential seismographic device which respects the FDSN convention. A Station has some standard characteristics such as a code, a channel, a network and a location.
 [^10]: [miniSEED](https://ds.iris.edu/ds/nodes/dmc/data/formats/miniseed/)
+[^20]: [IRIS](http://service.iris.edu/)
