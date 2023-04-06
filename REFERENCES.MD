@@ -10,24 +10,30 @@
 <small>Software used to visualize and sonify seimsic data</small>
 - [vvvv](https://visualprogramming.net/)
 - [VCVRack](https://vcvrack.com/)
-
-#### miniSEED Third Party Software
-<small>Software used to verify acquired data</small>
-- [obspy](https://github.com/obspy/obspy) 
-
 ***
-## MiniSEED Data Format
+## Data Acquisition
+<small>Below, you can find information about the web services of EIDA and IRIS which can be used to access various networks and stations for collecting data. Additionally, there are references and tools available for decoding and analyzing the collected data.</small>
+- [IRIS DMC Web Services](http://service.iris.edu/)
+#### Seismograph Networks supporting miniSEED format
+- [FDSN Networks](http://www.fdsn.org/networks/)
+- [RaspberryShake Data](https://data.raspberryshake.org/fdsnws/)
+- [FDSN NOA](http://eida.gein.noa.gr/fdsnws)
+
+### MiniSEED Data Format
 <small>The Standard for the Exchange of Earthquake Data (SEED) is a data format intended primarily for the archival and exchange of seismological time series data and related metadata.</small>
 
-#### SEED Reference Guide
+##### SEED Reference Guide
 - [SEED Manual](http://www.fdsn.org/pdf/SEEDManual_V2.4.pdf)
 
-#### Official MiniSEED Library
+##### Official MiniSEED Library
 - [libmseed](https://github.com/EarthScope/libmseed)
 
 #### Custom & Purpose Made Libraries for Data Extraction and visualization
 - [VL.Earth](https://github.com/cnisidis/VL.Earth) <small>(custom ported MiniSEED STEIM2 compression algorithm)</small>
 
+#### Third Party Software for Seismic Data
+<small>Software to acquire, analyze and visualize data</small>
+- [obspy](https://github.com/obspy/obspy) 
 
 
 ***
@@ -43,11 +49,8 @@
   <small>NWaves wrapper for vvvv</small>
 ***
 
-### Resources
 
-#### Seismograph Networks supporting miniSEED format
-- [FDSN Networks](http://www.fdsn.org/networks/)
-- [RaspberryShake Data](https://data.raspberryshake.org/fdsnws/)
-- [FDSN NOA](http://eida.gein.noa.gr/fdsnws)
+
+
 
 
