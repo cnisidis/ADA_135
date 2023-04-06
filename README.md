@@ -82,25 +82,22 @@ Initially, seismographs use the SEED format for exchanging seismic data (this is
 
 Depending on the channels of the device we may have access to different streams of data. 
 
-Each channel has an abbreviation code which signifies the type of the data and gives some hints regarding the capabilities of the sensor.
-
-However, as we discussed previously, it is always possible to collect (request) data that concern the sensors and the instruments of each station.
-
-The channels are mentioned in a MiniSEED record may follow the bellow abbreviations:
+##### Typical channel arrangements used by a GSN system:
+  
 | Channel | Description |
 |-:|:-|
-|EHZ/EHN/EHE|Short Period 100 sps
-|BHZ/BHN/BHE|Broad Band 20 sps
-|LHZ/LHN/LHE|Long Period 1 sps
-|VHZ/VHN/VHE|Very Long Period 0.1 sps
-|BCI|Broad Band Calibration Signal
-|ECI|Short Period Cal
-|LOG|Console Log
-|ACE|Administrative Clock Error
-|LCQ|1hz Clock Quality
-|OCF|Opaque Configuration File
+|EHZ/EHN/EHE|Short Period 100 sps|
+|BHZ/BHN/BHE|Broad Band 20 sps|
+|LHZ/LHN/LHE|Long Period 1 sps|
+|VHZ/VHN/VHE|Very Long Period 0.1 sps|
+|BCI|Broad Band Calibration Signal|
+|ECI|Short Period Cal|
+|LOG|Console Log|
+|ACE|Administrative Clock Error|
+|LCQ|1hz Clock Quality|
+|OCF|Opaque Configuration File|
 
-In particular, there is a subversion of SEED[^10] called MiniSEED, which comes in different flavors, depending on the nature of the data and the capabilities of each Station[^5]
+For realtime data exchange, there is a subversion of SEED[^10] called MiniSEED, which comes in different flavors, depending on the nature of the data and the capabilities of each Station[^5]
 
 So far the most comon type of MiniSEED seems to be the STEIM2 compression. 
 
