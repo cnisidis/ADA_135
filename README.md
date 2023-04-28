@@ -16,7 +16,7 @@ Below I will list the steps and methods I followed, the tools I used or had to m
 This attempt consists of two distinct parts. In **Part I** (Lithosphere), we represent earthquakes as points in space, and in **Part II**, we discuss the possibility of directly sonifying data streams from seismographs.
 
 ***
-### Part I: Lithosphere
+## Part I: Lithosphere
 
 <cite>Earthquakes as point-clouds</cite>
 
@@ -57,7 +57,7 @@ In the current application, the *saturation* of color represents the time of app
 
 
 ***
-### Part II : TARTARUS
+## Part II : TARTARUS
 
 <cite>Collect (almost real time) miniSEED data for sonification, from seismographs around the globe.</cite>
 
@@ -70,19 +70,18 @@ Each stream from the seismograph stations is audibly represented as a continuous
 
 This part is segmented to distinct phases.
 
-##### Phase A. Retrieve Data Sources
+### Phase A. Retrieve Data Sources
 
 This section is generally more complex than Part II as the data is not always publicly available, making it difficult to obtain. However, the good news is that most of the data we need can be accessed through various networks depending on their location and the organization or institution that manages them.
 
 By setting and pushing simple queries with this [builder](http://eida.gein.noa.gr/fdsnws/dataselect/1/builder) we are capable to retrieve useful data from the NOA (National Observatory of Athens) or directly acquiring data through the FDSN[^1] via IRIS[^20].
 
-##### Phase B. Acquire Data
-
+### Phase B. Acquire Data
 Initially, seismographs use the SEED format for exchanging seismic data (this is very depended on the sensors and the type of the data we request). 
 
 Depending on the channels of the device we may have access to different streams of data. 
 
-##### Typical channel arrangements used by a GSN system:
+#### Typical channel arrangements used by a GSN system:
   
 | Channel | Description |
 |-:|:-|
@@ -101,7 +100,35 @@ For realtime data exchange, there is a subversion of SEED[^10] called MiniSEED, 
 
     So far the most comon type of MiniSEED seems to be the STEIM2 compression.
 
-##### Phase C. Rectify and Resample Acquired Data
+### Phase C. Rectify and Resample Acquired Data
+
+According to the table (see below) and addtionally to the previous table (channels), there is a way to understand and identify sampling rates.
+
+    EHZ : 80 samples/sec (E) on a high-gain seismometer (H) measuring the vertical displacement (Z).
+
+|Symbol|Description|
+|:-:|-|
+|**Sample Rate Prefix**||
+|E|greater than 80 samples=s(including 100 and 200 samples/s)|
+|S|10–80 samples=s|
+|H|greater than 80 samples=s(broadband)|
+|B|from 10 to 80 samples=s|
+|L|1 samples=s|
+|V|0:01 samples=s|
+|**Instrument code**||
+|H|high-gain seismometer|
+|L|low-gain seismometer|
+|G|gravimeter|
+|M|mass position|
+|N|accelerometer|
+|P|geophone|
+|D|pressure|
+|**Orientation**||
+|-|-:|
+|Z, N, E|traditional vertical, north–south, east–west|
+|T, R|transverse and radial|
+|1, 2, 3|orthogonal with nontraditional orientation|
+
 
 Upsampling from 100Hz to 48kHz, antialising order:15
 no IFRs were applied
@@ -111,7 +138,7 @@ Listen to an audible test on [soundcloud](https://soundcloud.com/cnisidis/earthq
 
 
 
-##### Phase D. Render Data to Audio
+### Phase D. Render Data to Audio
 
 There are several methods to convert a barely audible signal to an audio signal. One approach is upsampling, which can increase the range resolution by spreading out the data across the entire spectrum. Another option is to use pitch shifting with algorithms such as PSOLA or other OLA algorithms. However, I have decided to opt for a simpler, less precise method that is more artistically interesting - using the signal envelope.
 
@@ -138,7 +165,7 @@ For the time being, we will create our oscillators in VCVRack, although any othe
 
 
 
-##### Phase E. Represent Data graphically (optional)
+### Phase E. Represent Data graphically (optional)
 //TODO
 
 
