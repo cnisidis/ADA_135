@@ -57,9 +57,9 @@ In the current application, the *saturation* of color represents the time of app
 
 
 ***
-### Part II
+### Part II : TARTARUS
 
-<cite>Collect data in real-time (almost real time) from seismographs around the globe.</cite>
+<cite>Collect (almost real time) miniSEED data for sonification, from seismographs around the globe.</cite>
 
 In this section, our goal is to sonify data by accessing a continuous stream derived from specific stations around the world. 
 
