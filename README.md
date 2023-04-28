@@ -99,7 +99,7 @@ Depending on the channels of the device we may have access to different streams 
 
 For realtime data exchange, there is a subversion of SEED[^10] called MiniSEED, which comes in different flavors, depending on the nature of the data and the capabilities of each Station[^5]
 
-So far the most comon type of MiniSEED seems to be the STEIM2 compression. 
+    So far the most comon type of MiniSEED seems to be the STEIM2 compression.
 
 ##### Phase C. Rectify and Resample Acquired Data
 
