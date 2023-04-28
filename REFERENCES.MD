@@ -24,6 +24,8 @@
 
 ##### SEED Reference Guide
 - [SEED Manual](http://www.fdsn.org/pdf/SEEDManual_V2.4.pdf)
+- [A Quick Guide](https://www.researchgate.net/publication/283662927_A_quick_SEED_tutorial) <small >DOI:10.1785/0220150043 Adam Ringler, John R. Evans
+ Nov 2015</small>
 
 ##### Official MiniSEED Library
 - [libmseed](https://github.com/EarthScope/libmseed)
