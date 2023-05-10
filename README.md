@@ -76,6 +76,10 @@ This section is generally more complex than Part II as the data is not always pu
 
 By setting and pushing simple queries with this [builder](http://eida.gein.noa.gr/fdsnws/dataselect/1/builder) we are capable to retrieve useful data from the NOA (National Observatory of Athens) or directly acquiring data through the FDSN[^1] via IRIS[^20].
 
+| ![Build Query Example](build_query_example_00.png) |
+|:--:|
+| <small>*Above: Build a query with VL.Earth*</small> |
+
 ### Phase B. Acquire Data
 Initially, seismographs use the SEED format for exchanging seismic data (this is very depended on the sensors and the type of the data we request). 
 
@@ -101,6 +105,10 @@ For realtime data exchange, there is a subversion of SEED[^10] called MiniSEED, 
     So far the most comon type of MiniSEED seems to be the STEIM2 compression.
 
 ### Phase C. Rectify and Resample Acquired Data
+
+| ![Build Query Example](tartarus_wip_00.png) |
+|:--:|
+| <small>*Example from TARTARUS App, visualize signals from different stations via Pi-Shake network*</small> |
 
 According to the table (see below) and addtionally to the previous table (channels), there is a way to understand and identify sampling rates.
 
