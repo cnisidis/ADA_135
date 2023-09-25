@@ -182,8 +182,10 @@ For the time being, we will create our oscillators in VCVRack, although any othe
 |:--:|
 | <small>*In the example above, I am using 8 FFT bands to generate envelopes, which will drive 8 different oscillators (per Stream). Each oscillator is tuned in such a way that it maintains the average range of each band on the audible spectrum.*</small> |
 
-### Phase E. Represent Data graphically (optional)
-//TODO
+
+***
+[References & Bibliography](REFERENCES.MD)
+
 
 
 
