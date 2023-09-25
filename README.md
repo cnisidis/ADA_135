@@ -2,7 +2,9 @@
 Personal repository for course ADA_135 at Ionian University
 
 ## Preface
-In recent years, I have been deeply concerned about the seismic activity in Greece. This concern led me to visualize data obtained from seismological recordings spanning several decades up to the present day.
+In recent years, I have been deeply concerned about seismic activity in Greece. My enduring fascination with the awe-inspiring yet unpredictable and destructive nature of earthquakes led me to embark on an experiment: to transform this phenomenon into a source of controlled randomness, a consistent randomness that vividly portrays chaos.
+
+My journey began with visualizing seismic events, particularly earthquakes, with the ambition of identifying visual patterns and uncovering the hidden dynamics beneath the Earth's surface. As I scrutinized the data and the colorful dots in the three-dimensional virtual space, I couldn't help but feel compelled to do more—to listen to them, to imagine the sounds they might produce, and to experience their sensations.
 
 As a next step, I began exploring the possibility of sonifying this data with the ultimate goal of presenting it in an interactive installation.
 
@@ -59,17 +61,31 @@ In the current application, the *saturation* of color represents the time of app
 ***
 ## Part II : TARTARUS
 
-<cite>Collect (almost real time) miniSEED data for sonification, from seismographs around the globe.</cite>
+A Seismic Signal Processing Application for Artistic Visualization and Sonification
+
+|[![Tartarus Video on youtube](http://img.youtube.com/vi/J7XCLp2m_o0/default.jpg)](https://youtu.be/JKl6PjuqT88)|
+|:--:|
+|<small>*Youtube Video [Tartarus POC](https://www.youtube.com/watch?v=J7XCLp2m_o0)*</small>|
+
+<small><i>In Greek mythology, Tartarus is a term that refers to both a deity and a location. Tartarus is often described as a deep, gloomy, and abyssal abyss or pit within the underworld, where the most wicked and monstrous beings are imprisoned for eternity. It's a place of punishment and confinement for those who have committed heinous crimes or defied the gods.</i></small>
+
+### Introduction
 
 In this section, our goal is to sonify data by accessing a continuous stream derived from specific stations around the world. 
 
+
 The inspiration for this idea comes from an audio experience where the listener stands in the center of a room surrounded by speakers. 
 
-Each stream from the seismograph stations is audibly represented as a continuous sound signal emanating from the speakers placed around the room.
+Tartarus has the capability to retrieve information from seismographic devices via the IRIS network and FDSN. It can receive the streams, typically transmitted in the 'miniSEED' file format, process them, and convert them into envelopes for the purpose of driving acoustic oscillators.
 
 
-This part is segmented to distinct phases.
+### Presentation
 
+The inspiration for this idea comes from an audio experience where the listener stands in the center of a room surrounded by speakers. 
+
+A potential scenario for exhibiting Tartarus involves a room equipped with a minimum of four speakers, strategically placed around the audience. Each speaker corresponds to a distinct point on the horizon and, in actuality, represents a real seismographic device. The entire experience is designed to provide an acoustic glimpse of what it would be like to listen to the Earth's natural rhythms and vibrations.
+
+## How it works
 ### Phase A. Retrieve Data Sources
 
 This section is generally more complex than Part II as the data is not always publicly available, making it difficult to obtain. However, the good news is that most of the data we need can be accessed through various networks depending on their location and the organization or institution that manages them.
@@ -151,35 +167,23 @@ Listen to an audible test on [soundcloud](https://soundcloud.com/cnisidis/earthq
 There are several methods to convert a barely audible signal to an audio signal. One approach is upsampling, which can increase the range resolution by spreading out the data across the entire spectrum. Another option is to use pitch shifting with algorithms such as PSOLA or other OLA algorithms. However, I have decided to opt for a simpler, less precise method that is more artistically interesting - using the signal envelope.
 
 Process of creating the envelopes:
-- Obtain the FFT of the signal.
-- Map and clamp the FFT bins or bands.
-- Send the mapped and clamped bins as envelopes through MIDI.
-- Use these envelopes as input in VCVRack.
+- Obtain the STFT of the signal (Hann or Gaussian window prfered).
+- Map and clamp the FFT bands.
+- Send the mapped and clamped bands as envelopes through MIDI.
+- Use these envelopes as input in VCV Rack or your favorite DAW.
 
-//TODO waveform example
 
-//TODO FFT Envelopes Example
 
-Even though the signal's sampling rate is 100Hz/sec in our example, we are still able to read it and obtain its FFT. This allows us to generate new envelopes that can be used to drive oscillators.
+Even though the signal's sampling rate is 100 sps (100Hz) in our example, we are still able to read it and obtain its STFT Spectrum. This allows us to generate new envelopes that can be used to drive oscillators.
 
 For the time being, we will create our oscillators in VCVRack, although any other digital audio workstation (DAW) or programming language such as PD, MAX/MSP, or SoundCollider can also be used.
 
 | ![VCVRack Oscillators](VCVRack_Oscillators.png) |
 |:--:|
-| <small>*In the example above, I am using 12 FFT bands to generate envelopes, which will drive 12 different oscillators. Each oscillator is tuned in such a way that it maintains the average range of each band.*</small> |
-
-
-//TODO Multichannel Audio 
-
-
+| <small>*In the example above, I am using 8 FFT bands to generate envelopes, which will drive 8 different oscillators (per Stream). Each oscillator is tuned in such a way that it maintains the average range of each band on the audible spectrum.*</small> |
 
 ### Phase E. Represent Data graphically (optional)
 //TODO
-
-
-
-
-
 
 
 

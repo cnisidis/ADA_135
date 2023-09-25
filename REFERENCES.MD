@@ -35,7 +35,7 @@
 
 #### Third Party Software for Seismic Data
 <small>Software to acquire, analyze and visualize data</small>
-- [obspy](https://github.com/obspy/obspy) 
+- [obspy](https://github.com/obspy/obspy) was used to verify and compare streams (ground truth data)
 
 
 ***
@@ -51,7 +51,14 @@
   <small>NWaves wrapper for vvvv</small>
 ***
 
-
+## Bibliography
+- <i> Mousa, Wail A. Advanced Digital Signal Processing of Seismic Data, 2019 </i>
+- <i>Pavlidis, Spyros B. & Chatzipetros, Alexandros A. Earth System Gaia "Gaia" - Understanding the structure and the function of our planet, 2018</i>
+- <i>Papanikolaou, Dimitris I. Geology of Greece, Tectonic Structure and Paleographic-Geodynamic Evolution, 2014</i>
+- <i>Dunbar-Hester, Christina. Listening to Cybernetics: Music, Machines, and Nervous Systems, 1950-1980, 2010</i>
+- <i>Gleick, James. Chaos:Making a New Science, 1997</i>
+- <i>Arnheim, Rudolf. Entropy and Art - An Essay on disorder and order, 2003</i>
+- <i>Simondon, Gilbert. On the world of existence of technical objects, 1958<i>
 
 
 
