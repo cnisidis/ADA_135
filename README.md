@@ -63,7 +63,7 @@ In the current application, the *saturation* of color represents the time of app
 
 A Seismic Signal Processing Application for Artistic Visualization and Sonification
 
-|[![Tartarus Video on youtube](http://img.youtube.com/vi/J7XCLp2m_o0/default.jpg)](https://youtu.be/JKl6PjuqT88)|
+|[![Tartarus Video on youtube](tartarus_wip_01.png)](https://www.youtube.com/watch?v=J7XCLp2m_o0)|
 |:--:|
 |<small>*Youtube Video [Tartarus POC](https://www.youtube.com/watch?v=J7XCLp2m_o0)*</small>|
 
