@@ -176,7 +176,7 @@ Process of creating the envelopes:
 
 Even though the signal's sampling rate is 100 sps (100Hz) in our example, we are still able to read it and obtain its STFT Spectrum. This allows us to generate new envelopes that can be used to drive oscillators.
 
-For the time being, we will create our oscillators in VCVRack, although any other digital audio workstation (DAW) or programming language such as PD, MAX/MSP, or SoundCollider can also be used.
+For the time being, we will create our oscillators in VCVRack, although any other digital audio workstation (DAW) or programming language such as PD, MAX/MSP, or SuperCollider can also be used.
 
 | ![VCVRack Oscillators](VCVRack_Oscillators.png) |
 |:--:|
