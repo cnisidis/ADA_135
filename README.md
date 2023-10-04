@@ -124,7 +124,7 @@ For realtime data exchange, there is a subversion of SEED[^10] called MiniSEED, 
 
 | ![Build Query Example](tartarus_wip_00.png) |
 |:--:|
-| <small>*Example from TARTARUS App, visualize signals from different stations via Pi-Shake network*</small> |
+| <small>*Screenshot: TARTARUS App, visualize signals from different stations on Raspberry Shake Network[^30]*</small> |
 
 According to the table (see below) and addtionally to the previous table (channels), there is a way to understand and identify sampling rates.
 
@@ -193,3 +193,4 @@ For the time being, we will create our oscillators in VCVRack, although any othe
 [^5]: Station: Every potential seismographic device which respects the FDSN convention. A Station has some standard characteristics such as a code, a channel, a network and a location.
 [^10]: [miniSEED](https://ds.iris.edu/ds/nodes/dmc/data/formats/miniseed/)
 [^20]: [IRIS](http://service.iris.edu/)
+[^30]: [Raspberry Shake Network](https://raspberryshake.org/)
